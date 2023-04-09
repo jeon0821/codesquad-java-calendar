@@ -24,7 +24,7 @@ public class Prompt {
 				continue; // continue는 만나면 루프의 처음으로 돌아감.
 			}
 
-			System.out.printf("%d월은 %d일까지 있습니다.\n", month, cal.getMaxDaysOfMonth(month)); // 배열의 인덱스는 0부터 시작이라서
+			cal.printCalendar(2023, month);
 
 		}
 
