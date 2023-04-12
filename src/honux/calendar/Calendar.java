@@ -20,10 +20,13 @@ public class Calendar {
 		}		
 	}
 
-	public void printCalendar(int year, int month, int weekday) {
-		System.out.printf("  <<%4d년%3d월>>\n", year, month);
+	public void printCalendar(int year, int month) {
+		System.out.printf("  <<%d년%d월>>\n", year, month);
 		System.out.println(" SU MO TU WE TH FR SA");
 		System.out.println("---------------------");
+		
+		//get weekday automatically
+		int weekday = 0;
 		
 		//print blank space
 		for (int i = 0; i < weekday; i++) {
