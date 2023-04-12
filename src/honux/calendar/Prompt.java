@@ -28,8 +28,7 @@ public class Prompt {
 		Calendar cal = new Calendar();
 
 		int month = 1;
-		int year = 2023;
-		int weekday = 0;
+		int year = 2017;
 
 		while (true) {
 			System.out.println("년도를 입력하세요.(exit: -1)");
@@ -38,7 +37,6 @@ public class Prompt {
 			if(year == -1)
 				break;
 			
-			year = scanner.nextInt();
 			System.out.println("달을 입력하세요.");
 			System.out.print("MONTH> ");
 			month = scanner.nextInt();
@@ -49,7 +47,6 @@ public class Prompt {
 			}
 
 			cal.printCalendar(year, month);
-
 		}
 
 		System.out.println("Bye~");
@@ -57,7 +54,6 @@ public class Prompt {
 	}
 
 	public static void main(String[] args) {
-
 		// 셸 실행
 		Prompt p = new Prompt();
 		p.runPrompt();
